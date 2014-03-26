@@ -11,12 +11,6 @@ It has always been a pain to deal with cross browser issues of the `window`'s re
 This project offers two scripts, each providing a special jQuery event that make `resize` more manageable:
 
 * **jquery.debouncedresize.js**: adds a special event that fires once after the window has been resized,
-* **jquery.throttledresize.js**: adds a special event that fires at a reduced rate (no more double events from Chrome and Safari).
-
-The [Demo](http://louisremi.github.com/jquery-smartresize/demo/index.html) should help you make your choice.
-
-**Note to previous users**: jquery.debouncedresize.js is the equivalent of the old jquery.smartresize.js, only the name of the special event changes. 
-Update is not required unless you want to add jquery.throttledresize.js to a page page that already has jquery.smartresize.js.
 
 Binding / Unbinding
 -------------------
@@ -27,30 +21,20 @@ Simply bind your special event just like a normal resize event.
 		// Your event handler code goes here.
 	});
 
-	// or...
-	$(window).on("throttledresize", function( event ) {
-		// Your event handler code goes here.
-	});
-
 	// unbind at will
 	$(window).off( "debouncedresize" );
 
 Threshold
 ---------
 
-Both special events have a `.threshold` option:
+This special event have a `.threshold` option:
 
 * in jquery.debouncedresize.js, it defines the interval used to determine if two `resize` events are part of the same `debouncedresize` event. **Defaults to 150 (milliseconds)**
-* in jquery.throttledresize.js, it defines the number of animation ticks (or frames) between each `throttledresize` event. **Defaults to 0 (tick)**, which means that it's going to fire at a maximum of 60fps.
 
 They can be modified globally once the script has been loaded:
 
     // increase the threshold to 250ms
     $.event.special.debouncedresize.threshold = 250;
-
-    // decrease the firing rate to a maximum of 30fps
-    $.event.special.throttledresize.threshold = 1;
-    // 2 <=> 20fps, 3 <=> 15fps, ...
 
 (Synchronous) Trigger
 ---------------------
@@ -61,7 +45,7 @@ Triggering those events is achieved using jQuery's standard API:
 
 It's also possible to execute the handler of any listener synchronously (without the delays):
 
-	$(window).trigger( "throttledresize", [true] );
+	$(window).trigger( "debouncedresize", [true] );
 
 Minimalist Standalone Version
 =============================
