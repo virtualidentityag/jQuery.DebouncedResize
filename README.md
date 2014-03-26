@@ -71,6 +71,10 @@ Initializing a page (by executing the resize handler when the page loads) couldn
 
 No files are provided for this function, simply copy/paste it from this README.
 
+Installation
+=======
+bower install --save jquery.debouncedresize
+
 License
 =======
 
