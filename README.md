@@ -1,4 +1,4 @@
-Debounced and Throttled Resize Events for jQuery
+Debounced Resize Events for jQuery
 ================================================
 
 It has always been a pain to deal with cross browser issues of the `window`'s resize event:
