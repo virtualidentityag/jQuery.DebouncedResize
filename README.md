@@ -75,6 +75,10 @@ Installation
 =======
 bower install --save jquery.debouncedresize
 
+Package
+=======
+Packaged by Andrew Dryga
+
 License
 =======
 
