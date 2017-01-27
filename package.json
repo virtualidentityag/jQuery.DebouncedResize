@@ -1,12 +1,12 @@
 {
   "name": "jquery.debouncedresize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Debounced Resize Events for jQuery",
   "main": "/js/jquery.debouncedresize.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/virtualidentityag/jQuery.DebouncedResize.git"
   },
-  "author": "AndrewDryga",
+  "author": "Louis-Rémi Babé",
   "license": "MIT"
 }

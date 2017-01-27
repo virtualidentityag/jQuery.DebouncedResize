@@ -1,6 +1,6 @@
 {
   "name": "jquery.debouncedresize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Debounced Resize Event for jQuery",
   "homepage": "https://github.com/AndrewDryga/jQuery.DebouncedResize",
   "main": "js/jquery.debouncedresize.js",
